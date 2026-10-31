@@ -9,8 +9,8 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23000'/%3E%3Ccircle cx='256' cy='256' r='120' fill='none' stroke='%2300E5FF' stroke-width='4'/%3E%3Ccircle cx='256' cy='256' r='80' fill='none' stroke='%2300E5FF' stroke-width='2' opacity='0.6'/%3E%3Ccircle cx='256' cy='256' r='40' fill='%2300E5FF' opacity='0.3'/%3E%3Cpath d='M256 136 L256 376 M136 256 L376 256' stroke='%2300E5FF' stroke-width='2' opacity='0.4'/%3E%3Ctext x='256' y='270' text-anchor='middle' fill='%2300E5FF' font-size='48' font-family='monospace'%3EJ%3C/text%3E%3C/svg%3E",
-      "sizes": "512x512",
+      "src": "/icon.svg",
+      "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }

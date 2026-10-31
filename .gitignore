@@ -30,3 +30,6 @@ Thumbs.db
 # Capacitor generated
 android/app/src/main/assets/capacitor.config.json
 android/app/src/main/assets/public/
+cert.pem
+key.pem
+scripts/https-server.mjs
