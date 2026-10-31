@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TurboMeta Agent HUD — 预览</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: -apple-system, 'SF Pro Display', 'PingFang SC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  h1 {
+    font-size: 22px;
+    color: #00E5FF;
+    text-shadow: 0 0 12px rgba(0,229,255,0.5);
+    font-family: monospace;
+    letter-spacing: 2px;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  .hud-container {
+    width: 600px;
+    height: 600px;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 40px rgba(0,229,255,0.15), inset 0 0 20px rgba(0,0,0,0.8);
+  }
+  .hud-label {
+    font-size: 12px;
+    color: rgba(0,229,255,0.6);
+    font-family: monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .canvas-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  iframe {
+    width: 600px;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+  }
+</style>
+</head>
+<body>
+  <h1>TurboMeta Agent HUD — 科幻战术风格预览</h1>
+  <div class="subtitle">RAY-BAN META DISPLAY // 600×600 // ADDITIVE LIGHT DISPLAY</div>
+
+  <div class="canvas-wrap">
+    <div class="hud-label">▼ LIVE HUD WEB APP (Idle + Navigation)</div>
+    <iframe src="http://127.0.0.1:4173/" title="TurboMeta Agent HUD"></iframe>
+  </div>
+
+  <div class="subtitle" style="margin-top: 10px;">
+    实际眼镜显示效果：黑色区域=透明，仅发光元素可见于镜片HUD
+  </div>
+</body>
+</html>
