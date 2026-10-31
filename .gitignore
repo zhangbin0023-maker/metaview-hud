@@ -33,3 +33,4 @@ android/app/src/main/assets/public/
 cert.pem
 key.pem
 scripts/https-server.mjs
+TurboMeta-Agent-debug.apk
