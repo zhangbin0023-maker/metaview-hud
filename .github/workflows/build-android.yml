@@ -1,4 +1,4 @@
-# GitHub Actions: Build TurboMeta Agent HUD APK for Android
+# GitHub Actions: Build MetaView HUD APK for Android
 # 推送代码后自动构建 debug APK，可在 GitHub Artifacts 下载
 
 name: Build Android APK
@@ -11,6 +11,8 @@ on:
       - 'index.html'
       - 'package.json'
       - 'package-lock.json'
+      - 'android/**'
+      - '.github/workflows/build-android.yml'
   workflow_dispatch:
 
 jobs:
@@ -55,6 +57,6 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: TurboMeta-Agent-Android
+          name: MetaView-Android-APK
           path: android/app/build/outputs/apk/debug/*.apk
           retention-days: 30

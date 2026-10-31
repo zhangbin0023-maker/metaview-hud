@@ -1,4 +1,4 @@
-# GitHub Actions: Build TurboMeta Agent HUD for iOS
+# GitHub Actions: Build MetaView HUD for iOS
 # 全程在 GitHub 的云端 macOS runner 上编译，你只需要在 Windows 上 git push
 #
 # 前提条件（一次性配置）：
@@ -71,7 +71,7 @@ jobs:
 
           # Download certificate using fastlane
           gem install fastlane
-          fastlane sigh --app_identifier com.turbometa.agent \
+          fastlane sigh --app_identifier com.metaview.agent \
             --username "$APPLE_ID" \
             --adhoc \
             --platform ios
@@ -96,6 +96,6 @@ jobs:
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
         with:
-          name: TurboMeta-Agent-iOS
+          name: MetaView-iOS-IPA
           path: ios/App/build/output/*.ipa
           retention-days: 30
