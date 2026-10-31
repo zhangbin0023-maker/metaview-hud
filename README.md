@@ -1,4 +1,4 @@
-# TurboMeta Agent HUD
+# MetaView HUD
 
 > Ray-Ban Meta Display 智能体助手 — JARVIS 风格多模块 HUD
 
@@ -70,7 +70,7 @@ npx vercel deploy --prod
 ## 项目结构
 
 ```
-turbometa-agent-hud/
+metaview-hud/
 ├── src/
 │   ├── App.tsx              # 主应用状态机
 │   ├── types.ts             # 类型定义

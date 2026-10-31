@@ -1,4 +1,4 @@
-package com.turbometa.agent;
+package com.metaview.agent;
 
 import android.os.Bundle;
 import android.view.WindowManager;

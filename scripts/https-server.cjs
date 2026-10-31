@@ -64,7 +64,7 @@ const PORT = 4443;
 server.listen(PORT, '0.0.0.0', () => {
   console.log('');
   console.log('========================================');
-  console.log('  TurboMeta Agent HUD - HTTPS Server');
+  console.log('  MetaView HUD - HTTPS Server');
   console.log('========================================');
   console.log('  Local:   https://localhost:' + PORT);
   console.log('  Network: https://192.168.2.6:' + PORT);

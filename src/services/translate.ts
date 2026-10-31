@@ -86,7 +86,7 @@ Return ONLY the translation in this JSON format:
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${provider.apiKey}`,
-      ...(provider.id === 'openrouter' ? { 'HTTP-Referer': 'https://turbometa.local' } : {}),
+      ...(provider.id === 'openrouter' ? { 'HTTP-Referer': 'https://metaview.local' } : {}),
     },
     body: JSON.stringify({
       model: provider.model,

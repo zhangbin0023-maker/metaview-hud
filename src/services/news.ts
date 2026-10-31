@@ -46,7 +46,7 @@ Provide 3-5 results.`;
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${provider.apiKey}`,
-      ...(provider.id === 'openrouter' ? { 'HTTP-Referer': 'https://turbometa.local' } : {}),
+      ...(provider.id === 'openrouter' ? { 'HTTP-Referer': 'https://metaview.local' } : {}),
     },
     body: JSON.stringify({
       model: provider.model,

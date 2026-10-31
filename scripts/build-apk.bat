@@ -1,5 +1,5 @@
 @echo off
-REM TurboMeta Agent HUD - Android APK Build Script (Windows)
+REM MetaView HUD - Android APK Build Script (Windows)
 REM Usage: build-apk.bat [debug|release]
 
 setlocal
@@ -11,7 +11,7 @@ set BUILD_TYPE=%1
 if "%BUILD_TYPE%"=="" set BUILD_TYPE=debug
 
 echo =========================================
-echo   TurboMeta Agent HUD - APK Builder
+echo   MetaView HUD - APK Builder
 echo =========================================
 echo.
 echo Project: %PROJECT_DIR%

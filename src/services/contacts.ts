@@ -1,5 +1,5 @@
 // 语音拨号服务
-// 从 TurboMeta APP 通过 URL 参数传入联系人信息，或使用本地模拟数据
+// 从 MetaView APP 通过 URL 参数传入联系人信息，或使用本地模拟数据
 
 import type { Contact } from '../types';
 
@@ -50,7 +50,7 @@ function calculateSimilarity(a: string, b: string): number {
 
 export function getContacts(): Contact[] {
   // 尝试从 localStorage 加载
-  const saved = localStorage.getItem('turbometa_contacts');
+  const saved = localStorage.getItem('metaview_contacts');
   if (saved) {
     try {
       return JSON.parse(saved);
@@ -62,7 +62,7 @@ export function getContacts(): Contact[] {
 }
 
 export function saveContacts(contacts: Contact[]): void {
-  localStorage.setItem('turbometa_contacts', JSON.stringify(contacts));
+  localStorage.setItem('metaview_contacts', JSON.stringify(contacts));
 }
 
 // 在 Ray-Ban Meta Display 眼镜上，拨号通过 Deep Link 回传给手机

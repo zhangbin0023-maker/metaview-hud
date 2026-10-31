@@ -176,8 +176,8 @@ export async function processUserIntent(
 
   // OpenRouter 需要额外头
   if (provider.id === 'openrouter') {
-    headers['HTTP-Referer'] = 'https://turbometa.app';
-    headers['X-Title'] = 'TurboMeta Agent HUD';
+    headers['HTTP-Referer'] = 'https://metaview.app';
+    headers['X-Title'] = 'MetaView HUD';
   }
 
   const body: Record<string, unknown> = {
@@ -235,8 +235,8 @@ export async function analyzeImage(
   };
 
   if (provider.id === 'openrouter') {
-    headers['HTTP-Referer'] = 'https://turbometa.app';
-    headers['X-Title'] = 'TurboMeta Agent HUD';
+    headers['HTTP-Referer'] = 'https://metaview.app';
+    headers['X-Title'] = 'MetaView HUD';
   }
 
   const response = await fetch(`${provider.baseURL}/chat/completions`, {
@@ -277,7 +277,7 @@ function buildSystemPrompt(location: GeoLocation | null): string {
     ? `用户当前位置：纬度${location.lat.toFixed(6)}，经度${location.lng.toFixed(6)}`
     : '用户位置未知';
 
-  return `你是 TurboMeta 智能眼镜助手，运行在 Ray-Ban Meta Display 眼镜的 HUD 上。
+  return `你是 MetaView 智能眼镜助手，运行在 Ray-Ban Meta Display 眼镜的 HUD 上。
 ${locStr}。
 当前时间：${new Date().toLocaleString('zh-CN')}。
 

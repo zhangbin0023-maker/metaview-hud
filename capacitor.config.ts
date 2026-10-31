@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.turbometa.agent',
-  appName: 'TurboMeta Agent',
+  appId: 'com.metaview.agent',
+  appName: 'MetaView',
   webDir: 'dist',
   android: {
     allowMixedContent: true,

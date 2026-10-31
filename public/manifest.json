@@ -1,6 +1,6 @@
 {
-  "name": "TurboMeta Agent",
-  "short_name": "JARVIS HUD",
+  "name": "MetaView",
+  "short_name": "MetaView",
   "description": "Ray-Ban Meta Display 智能体助手 — JARVIS 风格 HUD",
   "start_url": "/",
   "display": "fullscreen",

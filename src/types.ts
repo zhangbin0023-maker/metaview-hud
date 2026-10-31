@@ -1,4 +1,4 @@
-// TurboMeta Agent HUD — 类型定义
+// MetaView HUD — 类型定义
 
 // ============ AI Provider ============
 

@@ -3,7 +3,7 @@
 
 import type { Reminder } from '../types';
 
-const STORAGE_KEY = 'turbometa_reminders';
+const STORAGE_KEY = 'metaview_reminders';
 
 // 自然语言解析时间
 // "3点提醒我开会" → { title: "开会", time: <今天3点的timestamp> }

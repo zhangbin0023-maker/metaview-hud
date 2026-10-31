@@ -1,7 +1,7 @@
 {
-  "name": "turbometa-agent-hud",
+  "name": "metaview-hud",
   "version": "1.0.0",
-  "description": "TurboMeta Agent HUD — Ray-Ban Meta Display 智能体助手 Web App",
+  "description": "MetaView HUD — Ray-Ban Meta Display 智能体助手 Web App",
   "type": "module",
   "scripts": {
     "dev": "vite",

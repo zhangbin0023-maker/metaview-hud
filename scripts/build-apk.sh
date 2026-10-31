@@ -1,5 +1,5 @@
 #!/bin/bash
-# TurboMeta Agent HUD — Android APK Build Script
+# MetaView HUD — Android APK Build Script
 # 使用 Capacitor 将 Web App 打包为 Android APK
 # 
 # 前提条件：
@@ -19,7 +19,7 @@ JAVA_HOME="${JAVA_HOME:-C:\\Program Files\\Android\\Android Studio\\jbr}"
 ANDROID_HOME="${ANDROID_HOME:-C:\\Users\\speed\\AppData\\Local\\Android\\Sdk}"
 
 echo "========================================="
-echo "  TurboMeta Agent HUD — APK Builder"
+echo "  MetaView HUD — APK Builder"
 echo "========================================="
 echo ""
 echo "Project: $PROJECT_DIR"

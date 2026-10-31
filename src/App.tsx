@@ -1,4 +1,4 @@
-// TurboMeta Agent HUD — 主应用组件
+// MetaView HUD — 主应用组件
 // JARVIS 风格多模块智能助手 HUD
 
 import { useState, useEffect, useCallback, useRef } from 'react';
@@ -22,11 +22,11 @@ import { TranslateHUD } from './components/TranslateHUD';
 export function App() {
   // 设置
   const [settings, setSettings] = useState<Settings>(() => {
-    const saved = localStorage.getItem('turbometa_settings');
+    const saved = localStorage.getItem('metaview_settings');
     return saved ? { ...DEFAULT_SETTINGS, ...JSON.parse(saved) } : DEFAULT_SETTINGS;
   });
 
-  // URL 参数（从 TurboMeta APP Deep Link 传入）
+  // URL 参数（从 MetaView APP Deep Link 传入）
   const [, setUrlIntent] = useState<URLSearchParams | null>(null);
 
   // 设备能力
@@ -91,7 +91,7 @@ export function App() {
   const updateSettings = useCallback((newSettings: Partial<Settings>) => {
     setSettings(prev => {
       const updated = { ...prev, ...newSettings };
-      localStorage.setItem('turbometa_settings', JSON.stringify(updated));
+      localStorage.setItem('metaview_settings', JSON.stringify(updated));
       return updated;
     });
   }, []);
@@ -658,7 +658,7 @@ function IdleScreen({
         textShadow: '0 0 12px rgba(0,229,255,0.6)',
         fontFamily: 'monospace', letterSpacing: '1px', marginTop: '28px',
       }}>
-        TurboMeta Agent
+        MetaView
       </div>
 
       {/* GPS 数据块 */}
